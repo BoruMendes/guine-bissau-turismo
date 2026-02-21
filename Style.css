@@ -1,0 +1,50 @@
+/* Ajustes personalizados para o site */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 500px; /* Altura fixa para o carrossel */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Efeito hover nos cards da galeria */
+.galeria-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.galeria-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Rodapé fixo inferior */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    }
+ .rodape a {
+    color: #ffd700;
+    text-decoration: none;
+}
