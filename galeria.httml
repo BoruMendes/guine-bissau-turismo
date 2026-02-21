@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Guiné-Bissau Turismo</title>
+    <!-- Bootstrap CSS e Bootstrap js -->
+     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <!-- Navbar (copie a mesma das outras páginas) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Guiné-Bissau Turismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="importancia.html">Importância</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Galeria de Imagens</h1>
+
+        <!-- Grid com 12 imagens (3 linhas de 4 colunas em telas grandes) -->
+        <div class="row g-3">
+            <!-- Imagem 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?beach,guinea-bissau"
+                        data-img-legenda="Praia de Varela">
+                    <div class="card galeria-card">
+                        <img src="img/Varela praia-1.jpg" class="card-img-top" alt="Praia">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Praia de Varela</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?forest,guinea-bissau"
+                        data-img-legenda="Parque Nacional de Cantanhez">
+                    <div class="card galeria-card">
+                        <img src="img/cantanhez_1.200x200.jpg" class="card-img-top" alt="Floresta">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Cantanhez</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?island,guinea-bissau"
+                        data-img-legenda="Arquipélago dos Bijagós">
+                    <div class="card galeria-card">
+                        <img src="img/BOLAMA~mv2.webp" class="card-img-top" alt="Ilhas">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Bijagós</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?market,africa"
+                        data-img-legenda="Mercado de Bandim, Bissau">
+                    <div class="card galeria-card">
+                        <img src="img/Mercado Bandim.jpg" class="card-img-top" alt="Mercado">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Mercado de Bandim</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?fort,africa"
+                        data-img-legenda="Forte de Cacheu">
+                    <div class="card galeria-card">
+                        <img src="img/Cacheu.jpg" class="card-img-top" alt="Forte">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Cacheu</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?river,africa"
+                        data-img-legenda="Rio Geba">
+                    <div class="card galeria-card">
+                        <img src="img/RIO GEBA.jpg" class="card-img-top" alt="Rio">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Rio Geba</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?sunset,africa"
+                        data-img-legenda="Pôr do sol em Bubaque">
+                    <div class="card galeria-card">
+                        <img src="img/Por de sol Bubaque.jpeg" class="card-img-top" alt="Pôr do sol">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Bubaque</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 8 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?village,africa"
+                        data-img-legenda="Aldeia tradicional">
+                    <div class="card galeria-card">
+                        <img src="img/Aldeia Bijagos.jpg" class="card-img-top" alt="Aldeia">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Aldeia Bijagó</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 9 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?mangrove,africa"
+                        data-img-legenda="Mangal de Cacheu">
+                    <div class="card galeria-card">
+                        <img src="img/mangal.jpg" class="card-img-top" alt="Mangue">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Mangal</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 10 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?turtle,ocean"
+                        data-img-legenda="Tartaruga marinha - Bijagós">
+                    <div class="card galeria-card">
+                        <img src="img/TARTARUGA.jpg" class="card-img-top" alt="Tartaruga">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Tartaruga</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 11 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?dance,africa"
+                        data-img-legenda="Dança tradicional">
+                    <div class="card galeria-card">
+                        <img src="img/Carnaval .jpg" class="card-img-top" alt="Dança">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Dança</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <!-- Imagem 12 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn p-0 border-0 w-100" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+                        data-img-src="https://source.unsplash.com/800x600/?boat,africa"
+                        data-img-legenda="Canoa no rio">
+                    <div class="card galeria-card">
+                        <img src="img/Canoa.jpg" class="card-img-top" alt="Canoa">
+                        <div class="card-body p-2">
+                            <p class="card-text text-center">Canoa</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal único -->
+        <div class="modal fade" id="modalGaleria" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Guiné-Bissau</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="" id="imagemModal" class="img-fluid" alt="Imagem ampliada">
+                        <p id="legendaModal" class="mt-2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-box">
+            <h4>História</h4>
+            <a href="historia.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Contactos</h4>
+            <a href="contato.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Sobre</h4>
+            <a href="sobre.html">Ler mais...</a>
+        </div>
+
+    <!-- Script para o modal dinâmico -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modalGaleria = document.getElementById('modalGaleria');
+            modalGaleria.addEventListener('show.bs.modal', function(event) {
+                var button = event.relatedTarget;
+                var imgSrc = button.getAttribute('data-img-src');
+                var imgLegenda = button.getAttribute('data-img-legenda');
+                document.getElementById('imagemModal').src = imgSrc;
+                document.getElementById('legendaModal').textContent = imgLegenda;
+            });
+        });
+    </script>
+
+</body>
+</html>
