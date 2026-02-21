@@ -1,0 +1,150 @@
+trap CSS e Bootstrap js -->
+     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/Style.css">
+
+    <style>
+        /* Estilo adicional para os cards de história */
+        .historia-card {
+            border-left: 5px solid #0d6efd;
+            background-color: #f8f9fa;
+            transition: transform 0.2s;
+        }
+        .historia-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .mapa-placeholder {
+            background-color: #e9ecef;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar principal (igual às outras páginas, com link ativo para História) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Guiné-Bissau Turismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="historia.html">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+        <h1 class="text-center mb-5">História da Guiné-Bissau</h1>
+
+        <!-- Linha do tempo / períodos históricos -->
+        <div class="row g-4">
+            <!-- Período Pré-Colonial -->
+            <div class="col-md-6">
+                <div class="card historia-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi bi-tree-fill me-2"></i>Período Pré-Colonial
+                        </h5>
+                        <p class="card-text">
+                            Antes da chegada dos europeus, o território era habitado por diversos grupos étnicos, 
+                            como os Balantes, Fulas, Mandingas e Bijagós. Essas comunidades viviam da agricultura, 
+                            pesca e comércio regional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonização Portuguesa -->
+            <div class="col-md-6">
+                <div class="card historia-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">
+                            <i class="bi bi-ship-fill me-2"></i>Colonização Portuguesa
+                        </h5>
+                        <p class="card-text">
+                            No século XV, os portugueses chegaram à região e estabeleceram feitorias comerciais. 
+                            Durante séculos, o território foi colônia de Portugal, sendo utilizado principalmente 
+                            para o comércio e exploração de recursos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luta pela Independência -->
+            <div class="col-md-6">
+                <div class="card historia-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">
+                            <i class="bi bi-flag-fill me-2"></i>Luta pela Independência
+                        </h5>
+                        <p class="card-text">
+                            A luta pela independência começou na década de 1960, liderada pelo Partido Africano para 
+                            a Independência da Guiné e Cabo Verde (PAIGC). Após anos de conflito armado, a independência 
+                            foi proclamada em 24 de setembro de 1973 e reconhecida por Portugal em 1974.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Período Pós-Independência -->
+            <div class="col-md-6">
+                <div class="card historia-card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">
+                            <i class="bi bi-building-fill me-2"></i>Período Pós-Independência
+                        </h5>
+                        <p class="card-text">
+                            Após a independência, o país enfrentou desafios políticos e econômicos. Apesar das 
+                            dificuldades, a Guiné-Bissau continua buscando estabilidade, desenvolvimento e 
+                            fortalecimento das suas instituições.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa da Guiné-Bissau (ilustrativo) -->
+        <div class="mt-5">
+            <h3 class="text-center mb-4">Mapa da Guiné-Bissau</h3>
+            <div class="mapa-placeholder">
+                <i class="bi bi-map fs-1 d-block mb-3"></i>
+                <p class="mb-0"><img src="img/Mapa.png" alt="Mapa da Guinnné-issau"></p>
+            </div>
+            <!-- Caso queira uma imagem real, substitua a div acima por:
+            <img src="images/mapa-guine-bissau.jpg" class="img-fluid rounded shadow" alt="Mapa da Guiné-Bissau">
+            -->
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-box">
+            <h4>História</h4>
+            <a href="historia.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Contactos</h4>
+            <a href="contato.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Sobre</h4>
+            <a href="sobre.html">Ler mais...</a>
+        </div>
+     </footer>
+
+</body>
+</html>
