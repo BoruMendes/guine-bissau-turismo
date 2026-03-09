@@ -12,7 +12,6 @@
 
 </head>
 <body>
-    <!-- Navbar principal (igual às outras páginas) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Guiné-Bissau Turismo</a>
@@ -45,22 +44,22 @@
                         <h5 class="mb-0"><i class="bi bi-envelope-fill me-2"></i>Formulário de Contato</h5>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form id="formContato" action="contato.php" method="POST">
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="assunto" class="form-label">Assunto</label>
-                                <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto" required>
+                                <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Digite o assunto" required>
                             </div>
                             <div class="mb-3">
                                 <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                                <textarea class="form-control" name="mensagem" id="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Enviar Mensagem <i class="bi bi-send ms-2"></i></button>
                         </form>
@@ -89,7 +88,6 @@
                                 <strong>Endereço:</strong> Plack-II, Bissau, Guiné-Bissau
                             </li>
                         </ul>
-                        <!-- Mapa estático (opcional) -->
                         <div class="mt-3 text-muted">
                             <small><i class="bi bi-map"></i> Venha nos visitar!</small>
                         </div>
@@ -116,6 +114,8 @@
             <a href="sobre.html">Ler mais...</a>
         </div>
      </footer>
-    
+
+     
+   
 </body>
 </html>
