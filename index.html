@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guiné-Bissau Turismo</title>
+    <!-- Bootstrap CSS e Bootstrap js -->
+     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Guiné-Bissau Turismo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="importancia.html">Importância</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de destaques -->
+    <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/BOLAMA~mv2.webp" class="d-block w-100" alt="Praias">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h5>Arquipélago dos Bijagós</h5>
+                    <p>Reserva da Biosfera da UNESCO</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Poilao-1536x1022.jpg" class="d-block w-100" alt="Floresta">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h5>Parque Nacional de Cantanhez</h5>
+                    <p>Floresta tropical e chimpanzés</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Mercado Bandim.jpg" class="d-block w-100" alt="Mercado">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h5>Mercado de Bandim</h5>
+                    <p>Cores e sabores de Bissau</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1>Bem-vindo à Guiné-Bissau</h1>
+            <p class="lead">Descubra um país de ilhas paradisíacas, florestas exuberantes e culturas fascinantes.</p>
+        </div>
+
+        <!-- Cards de chamada para as seções -->
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/BOLAMA~mv2.webp" class="card-img-top" alt="Destinos">
+                    <div class="card-body">
+                        <h5 class="card-title">Destinos</h5>
+                        <p class="card-text">Conheça as ilhas dos Bijagós, a floresta de Cantanhez, a capital Bissau e muito mais.</p>
+                        <a href="destinos.html" class="btn btn-outline-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/Carnaval .jpg" class="card-img-top" alt="Cultura">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultura</h5>
+                        <p class="card-text">Máscaras, danças, etnias e a rica gastronomia guineense.</p>
+                        <a href="cultura.html" class="btn btn-outline-primary">Descobrir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/caju.jpg" class="card-img-top" alt="Importância">
+                    <div class="card-body">
+                        <h5 class="card-title">Importância</h5>
+                        <p class="card-text">Por que o turismo sustentável é vital para o país.</p>
+                        <a href="importancia.html" class="btn btn-outline-primary ">Entender</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-box">
+            <h4>História</h4>
+            <a href="historia.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Contactos</h4>
+            <a href="contato.html">Ler mais...</a>
+        </div>
+
+        <div class="rodape-box">
+            <h4>Sobre</h4>
+            <a href="sobre.html">Ler mais...</a>
+        </div>
+</footer>
+
+</body>
+</html>
